@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-image: url(img/Desktop\ -\ 1BGG.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+h2 {
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+
+.abt-text P  {
+    font-family: 'Comic Neue' , cursive;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* .hddr {
+    background-color: rgb(241, 241, 241);
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 1px #c4c4c4;
+} */
+/* front-img */
+.index2
+    {
+      position:absolute;
+      
+      z-index: 1;
+    }
+    .index1
+    {
+      position:absolute;
+      right: 10px;
+      z-index: 2;
+    }
+
+nav{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    padding: 16px 32px ;
+    background-color: rgb(31,41,55,255);
+    
+}
+
+h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.popup {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height : 400px;
+    top: 0;
+    left: 100%;
+    transition: 0.4s;
+
+    right: 0;
+    z-index: 98;
+    padding-top: 120px; 
+}
+
+.popup.is-active {
+    left: 0;
+
+}
+
+.popup a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family:'Bree Serif', serif;
+    text-align: center;
+    margin-bottom: 16px;
+    padding : 12px  16px;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 6px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    transform-origin: 0 0;
+    transition: 0.4s;  
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: purple;
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform: translate(0px,-2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px,3px) rotate(-45deg);
+}
+
+
+
+
+.menu {
+    display: none;
+}
+
+.menu a {
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+
+.menu .is-active , .menu a:hover {
+    background-color: purple;
+     
+}
+
+
+
+.yt-container{
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+
+
+
+.heading {
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-right: 65px;
+    padding-left: 25px;
+
+    font-family: sans-serif;
+
+}
+.btn-md{
+    margin: 2px;
+    /* background-color:  #4effaa; */
+    border: 2px solid #4effaa;
+    font-size: 16px;
+    outline: none;
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+    background-color: #202938;
+    border-radius: 7px;
+    /* border: none; */
+    font-weight: 500;
+}
+.btn-md:hover {
+    color: #202938;
+    background-color: #4effaa;
+}
+ .fa-chevron-down {
+    color: #4effaa;
+    font-size: 24px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 0;
+    animation: pop 1s infinite;
+
+}
+@keyframes pop {
+    0% {top:0px;}
+    50% {top:10px;}
+    100% {top:0px}
+}
+
+
+.abt-text {
+    color: white;
+    display: block;
+    margin: 3rem auto 0;
+    width: 100vh;
+    padding : 15px 20px;
+    border-radius: 20px;
+    background-color: #c4c4c416;
+}
+
+.sport {
+    /* width: 60px; */
+    align-items: center;
+    margin: 60px 30px;
+    max-width : 360px ;
+    /* height: 150px;
+    margin: 100px 75px; */
+    border: 1px solid #4effaa;
+
+    border-radius:20px ;
+    /* padding: 15px 40px ; */
+    background-color: #c4c4c416;  
+}
+.sport i {
+    color: white;
+    margin: 10px auto;
+    /* text-align: center;
+    margin: auto; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sport p {
+    font-family: 'Comic Neue' , cursive;
+    font-size: 17px;
+    color: white;
+}
+/* feature */
+
+.feature {
+    
+    margin: auto;
+    width: 50%;
+}
+.feature > h2  {
+    color: rgb(255, 255, 255);
+    margin-top:50px;
+
+}
+.feature > p  {
+    color: rgb(255, 255, 255);
+    font-family: 'Comic Neue' , cursive;
+    font-size: 21px;
+    color: #9CA3AF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+
+
+}
+.feature img {
+    width: 30rem;
+    max-width: 80vw;
+}
+
+/* tech */
+
+.technologies {
+    text-align: center;
+    
+    
+    justify-content: center;
+    
+}
+.technologies > div {
+    
+    padding: 5px 15px;
+    margin : 5px 15px;
+    background-color: #c4c4c416;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-bottom: 35px;
+    
+}
+.technologies h2 {
+    margin-top: 100px ;
+    margin-bottom: 50px;
+}
+
+.fa-brands {
+    color: #4effaa;
+    font-size: 45px;
+    margin: 5px 15px;
+}
+
+.technologies > div > p {
+    font-size: 13px;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+
+footer > div {
+    display: inline-block;
+    
+    border-radius: 50%;
+    /* background-color: #c4c4c416; */
+    margin: 20px 5px;
+    
+}
+
+
+.socials {
+    font-size: 20px;
+    padding: 8px 1px;
+    
+}
+
+footer > div:hover {
+    background-color: #c4c4c416;
+}
+
+
+
+
+
+
+    
+
+    
+
+@media (max-width) {
+    nav ul li a {
+        font-size:16px;
+    }
+}
+
+@media (max-width:852px){
+    .icon {
+        display: block;
+    }
+}
